@@ -1,0 +1,106 @@
+*{margin:0;padding:0;}
+body
+{
+    background: #2f2f2f;
+}
+/*将包裹层水平、垂直居中*/
+.wrapper
+{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:300px;
+    height:300px;
+    margin-left: -150px;
+    margin-top:-150px;
+    opacity: 0.9;
+    font-size: 0;
+}
+/*5个div float:left*/
+.wrapper > div
+{
+    width:100px;
+    height:100px;
+    float: left;
+    border-radius: 50px;
+}
+.top
+{
+    background: #26bbd4;
+    margin-left:100px;
+    margin-right:100px;
+    box-shadow:0 0 10px #26bad3;
+}
+.top:before
+{
+    content:"";
+    height:2px;
+    width:100px;
+    background: #26bad3;
+    position: absolute;
+    top:-15px;
+    right:105px;
+    transform: rotate(-45deg);
+}
+.left
+{
+    background: #d5c74b;
+    box-shadow:0 0 10px #d4c64b;
+}
+.left:before
+{
+    content:"";
+    height:2px;
+    width:100px;
+    background: #d4c64b;
+    position: absolute;
+    top:149px;
+    right:270px;
+    transform: rotate(-135deg);
+}
+.middle
+{
+    background: #ffffff;
+    text-align: center;
+    box-shadow:0 0 10px #a5dade,
+    inset 0 0 60px #fb5979;
+    line-height: 100px;
+}
+img{
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+}
+.right
+{
+    background: #a6dbdf;
+    box-shadow:0 0 10px #a5dade;
+}
+.right:before
+{
+    content:"";
+    height:2px;
+    width:100px;
+    background: #a5dade;
+    position: absolute;
+    top:144px;
+    right:-64px;
+    transform: rotate(-135deg);
+}
+.bottom
+{
+    background: #1c7886;
+    margin-left:100px;
+    box-shadow:0 0 10px #1c7885;
+}
+.bottom:before
+{
+    content:"";
+    height:2px;
+    width:100px;
+    background: #1c7885;
+    position: absolute;
+    top:311px;
+    right:94px;
+    transform: rotate(-45deg);
+}
